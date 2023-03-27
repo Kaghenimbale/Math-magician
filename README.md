@@ -22,7 +22,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Javascript Capstone Project] <a name="about-project"></a>
+# 📖 [Math magician] <a name="about-project"></a>
 
 **[Math magician]** is a website for all fans of mathematics.
 
