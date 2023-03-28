@@ -1,12 +1,10 @@
 import React from 'react';
 import './calculator.css';
+import Display from './Display';
 
 const Calculator = () => (
   <div className="calculator-container">
-    <div className="input">
-      <p className="values">0</p>
-    </div>
-
+    <Display />
     <div className="signs">
       <button type="button" className="sign btn1">AC</button>
       <button type="button" className="sign btn2">+/-</button>
