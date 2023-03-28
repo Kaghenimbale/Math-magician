@@ -1,6 +1,6 @@
 .calculator-container {
   background: rgb(251, 253, 254);
-  box-shadow: 0 0 10px lightgrey;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
 }
 
 .input {
