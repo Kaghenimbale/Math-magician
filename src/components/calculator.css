@@ -2,3 +2,18 @@
   background: rgb(251, 253, 254);
   box-shadow: 0 0 10px lightgrey;
 }
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  border: 1px solid lightgrey;
+  font-size: 1.4rem;
+  background: darkgray;
+  color: whitesmoke;
+}
+
+.values {
+  padding: 0 0.5rem;
+}
