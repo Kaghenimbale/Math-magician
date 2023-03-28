@@ -1,0 +1,46 @@
+.calculator-container {
+  background: rgb(251, 253, 254);
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  border: 1px solid lightgrey;
+  font-size: 1.4rem;
+  background: darkgray;
+  color: whitesmoke;
+}
+
+.values {
+  padding: 0 0.5rem;
+}
+
+.signs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'Area1 Area2 Area3 Area4'
+    'Area5 Area6 Area7 Area8'
+    'Area9 Area10 Area11 Area12'
+    'Area13 Area14 Area15 Area16'
+    'zeroA zeroA Area17 Area18';
+}
+
+.btn18 { grid-area: zeroA; }
+
+.sign {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.sign:hover {
+  cursor: pointer;
+}
+
+.sing-math {
+  background: rgb(234, 129, 17);
+}
