@@ -36,7 +36,7 @@ const Calculator = () => {
           onClick={handleClick}
           className="sign sing-math btn4"
         >
-          +
+          ÷
         </button>
         <button type="button" onClick={handleClick} className="sign btn5">
           7
