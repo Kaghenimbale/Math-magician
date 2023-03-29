@@ -3,6 +3,15 @@ import './calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
+  const handleClick = (e) => {
+    const answer = calculate({ total, next, operation }, e.target.textContent);
+    setTotal(answer.total);
+    setNext(answer.next);
+    setOperation(answer.operation);
+  };
   return (
     <div className="calculator-container">
       <div className="input">
