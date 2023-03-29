@@ -29,7 +29,9 @@
     'zeroA zeroA Area17 Area18';
 }
 
-.btn18 { grid-area: zeroA; }
+.btn18 {
+  grid-area: zeroA;
+}
 
 .sign {
   padding: 1.5rem;
