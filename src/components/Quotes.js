@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import Loading from './Loading';
 
 const Quotes = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,6 +21,7 @@ const Quotes = () => {
 
         const json = await response.json();
         setData(json);
+        setLoading(false);
       } catch (err) {
         throw err.message;
       }
@@ -28,9 +31,11 @@ const Quotes = () => {
 
   return (
     <div className="quotes">
-      {data.map((item) => (
-        <h2 key={item.author}>{item.quote}</h2>
-      ))}
+      {loading ? (
+        <Loading />
+      ) : (
+        data.map((item) => <h2 key={item.author}>{item.quote}</h2>)
+      )}
     </div>
   );
 };
