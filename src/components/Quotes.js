@@ -4,6 +4,7 @@ import Loading from './Loading';
 const Quotes = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,12 +23,14 @@ const Quotes = () => {
         const json = await response.json();
         setData(json);
         setLoading(false);
-      } catch (err) {
-        throw err.message;
+      } catch {
+        setError(true);
       }
     };
     fetchData();
   }, []);
+
+  if (error) return 'Sorry, something went wrong !!!';
 
   return (
     <div className="quotes">
