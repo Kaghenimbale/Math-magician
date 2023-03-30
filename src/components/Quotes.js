@@ -30,7 +30,7 @@ const Quotes = () => {
     fetchData();
   }, []);
 
-  if (error) return 'Sorry, something went wrong !!!';
+  if (error) return <p className="error">Sorry, something went wrong !!!</p>;
 
   return (
     <div className="quotes">
