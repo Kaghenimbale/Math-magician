@@ -1,7 +1,6 @@
 import operate from './operate';
 
 function isNumber(item) {
-  console.log(item);
   return !!item.match(/[0-9]+/);
 }
 
