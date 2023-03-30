@@ -13,6 +13,21 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.content-2 {
+  background: whitesmoke;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
 }
