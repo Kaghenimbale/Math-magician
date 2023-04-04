@@ -13,6 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="calculator" element={<Calculator />} />
         <Route path="quotes" element={<Quotes />} />
+        <Route path="*" element={<h2>Page Not Found</h2>} />
       </Routes>
     </Router>
   );

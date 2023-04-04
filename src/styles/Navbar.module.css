@@ -11,6 +11,10 @@
   padding: 1rem 2rem;
 }
 
+.navbar h2 {
+  font-size: 2rem;
+}
+
 .navlist {
   display: flex;
   align-items: center;
