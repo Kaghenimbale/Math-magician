@@ -33,12 +33,14 @@ const Quotes = () => {
   if (error) return <p className="error">Sorry, something went wrong !!!</p>;
 
   return (
-    <div className="quotes">
-      {loading ? (
-        <Loading />
-      ) : (
-        data.map((item) => <h2 key={item.author}>{item.quote}</h2>)
-      )}
+    <div className="Content content-2">
+      <div className="quotes">
+        {loading ? (
+          <Loading />
+        ) : (
+          data.map((item) => <h2 key={item.author}>{item.quote}</h2>)
+        )}
+      </div>
     </div>
   );
 };

@@ -1,19 +1,20 @@
 import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Calculator from './components/Calculator';
-// import Loading from './components/Loading';
 import Quotes from './components/Quotes';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="container">
-      <div className="Content">
-        <Calculator />
-      </div>
-      <div className="Content content-2">
-        <Quotes />
-        {/* <Loading /> */}
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quotes" element={<Quotes />} />
+      </Routes>
+    </Router>
   );
 }
 
