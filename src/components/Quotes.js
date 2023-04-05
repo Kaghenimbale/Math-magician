@@ -6,27 +6,27 @@ const Quotes = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          'https://api.api-ninjas.com/v1/quotes?category=movies',
-          {
-            method: 'GET',
-            headers: {
-              'X-Api-Key': 'arIFtVZGcs2vT1zIZyli+g==v755qa3tuyC6sjFm',
-            },
-            contentType: 'application/json',
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        'https://api.api-ninjas.com/v1/quotes?category=movies',
+        {
+          method: 'GET',
+          headers: {
+            'X-Api-Key': 'arIFtVZGcs2vT1zIZyli+g==v755qa3tuyC6sjFm',
           },
-        );
+          contentType: 'application/json',
+        },
+      );
 
-        const json = await response.json();
-        setData(json);
-        setLoading(false);
-      } catch {
-        setError(true);
-      }
-    };
+      const json = await response.json();
+      setData(json);
+      setLoading(false);
+    } catch {
+      setError(true);
+    }
+  };
+  useEffect(() => {
     fetchData();
   }, []);
 
