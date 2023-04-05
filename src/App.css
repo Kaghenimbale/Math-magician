@@ -57,3 +57,21 @@ body {
   color: rgb(62, 97, 172);
   font-weight: 700;
 }
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.mycalculator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
