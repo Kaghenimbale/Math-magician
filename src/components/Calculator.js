@@ -1,17 +1,26 @@
+// import * as React from 'react';
 import React, { useState } from 'react';
 import './calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [total, setTotal] = useState(null);
-  const [next, setNext] = useState(null);
-  const [operation, setOperation] = useState(null);
+  // const [total, setTotal] = useState(null);
+  // const [next, setNext] = useState(null);
+  // const [operation, setOperation] = useState(null);
+  // const handleClick = (e) => {
+  //   const answer = calculate({ total, next, operation }, e.target.textContent);
+  //   setTotal(answer.total);
+  //   setNext(answer.next);
+  //   setOperation(answer.operation);
+  // };
+
+  const [state, setState] = useState({ total: '0', next: null, operation: null });
   const handleClick = (e) => {
-    const answer = calculate({ total, next, operation }, e.target.textContent);
-    setTotal(answer.total);
-    setNext(answer.next);
-    setOperation(answer.operation);
+    const targetText = e.target.textContent;
+    const newState = calculate(state, targetText);
+    setState(newState);
   };
+  const { total, next, operation } = state;
   return (
     <div className="mycalculator">
       <div className="math-content">

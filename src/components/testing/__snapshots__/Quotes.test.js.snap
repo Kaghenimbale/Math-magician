@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote componenet should render the Quote component 1`] = `
+<div
+  className="Content content-2"
+>
+  <div
+    className="quotes"
+    data-testid="Quote"
+  >
+    <div
+      className="loading"
+      data-testid="Loading"
+    >
+      <img
+        alt="loading-icon"
+        className="load"
+        src="Loading_icon.gif"
+      />
+    </div>
+  </div>
+</div>
+`;

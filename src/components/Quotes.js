@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Loading from './Loading';
 
 const Quotes = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -34,7 +34,7 @@ const Quotes = () => {
 
   return (
     <div className="Content content-2">
-      <div className="quotes">
+      <div className="quotes" data-testid="Quote">
         {loading ? (
           <Loading />
         ) : (
