@@ -6,8 +6,7 @@ import Calculator from '../Calculator';
 
 describe('Calculator', () => {
   test('Render Calculator component', () => {
-    const tree = renderer
-      .create(<Calculator />).toJSON();
+    const tree = renderer.create(<Calculator />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

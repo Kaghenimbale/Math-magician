@@ -10,8 +10,7 @@ describe('Render components', () => {
   });
 
   test('Remder Home component', () => {
-    const tree = renderer
-      .create(<Home />).toJSON();
+    const tree = renderer.create(<Home />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
