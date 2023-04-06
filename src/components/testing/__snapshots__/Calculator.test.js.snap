@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Render Calculator component 1`] = `
+<div
+  className="mycalculator"
+>
+  <div
+    className="math-content"
+  >
+    <h1>
+      Let us do some Math!
+    </h1>
+  </div>
+  <div
+    className="calculator-container"
+  >
+    <div
+      className="input"
+    >
+      <p
+        className="values"
+      >
+        0
+      </p>
+    </div>
+    <div
+      className="signs"
+    >
+      <button
+        className="sign btn1"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="sign btn2"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="sign btn3"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="sign sing-math btn4"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="sign btn5"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="sign btn7"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="sign btn8"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="sign sing-math btn9"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className="sign btn10"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="sign btn11"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="sign btn12"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="sign sing-math btn13"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="sign btn14"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="sign btn15"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="sign btn16"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="sign sing-math btn17"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="sign btn18"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="sign btn19"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="sign sing-math btn20"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

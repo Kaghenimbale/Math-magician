@@ -25,12 +25,8 @@ body {
 }
 
 .content-2 {
-  background: whitesmoke;
-  box-shadow: 0 0 10px rgb(163, 163, 163);
-  padding: 1rem;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .loading {
@@ -51,4 +47,26 @@ body {
 
 .error {
   color: red;
+}
+
+.active {
+  color: rgb(62, 97, 172);
+  font-weight: 700;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.mycalculator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  width: 80vw;
 }
