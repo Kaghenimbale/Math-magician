@@ -50,7 +50,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-This project is already deployed.
+[Live Demo](https://math-magician-app-roti.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +105,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-This project is already deployed.
+[Live Demo](https://math-magician-app-roti.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
