@@ -9,8 +9,8 @@ describe('Quote componenet', () => {
   });
 
   test('should have "Let us do some Math" ', () => {
-     render(<Loading />);
-  const HomeElement = screen.getByTestId('Loading');
-  expect(HomeElement).toBeInTheDocument();
+    render(<Loading />);
+    const HomeElement = screen.getByTestId('Loading');
+    expect(HomeElement).toBeInTheDocument();
   });
 });

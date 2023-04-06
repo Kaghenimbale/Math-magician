@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 import Home from '../Home';
 
 describe('Render components', () => {
@@ -11,7 +11,7 @@ describe('Render components', () => {
 
   test('Remder Home component', () => {
     const tree = renderer
-    .create(<Home />).toJSON();
+      .create(<Home />).toJSON();
     expect(tree).toMatchSnapshot();
-  })
+  });
 });
